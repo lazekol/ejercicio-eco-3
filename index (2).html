@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xddd</title>
+</head>
+<script>
+const datos = [{
+  id: 1,
+  title: "M",
+  year: 2011
+},{
+  id: 2,
+  title: "Half-Life 3",
+  year: 2026
+},{
+  id: 3,
+  title: "GTA 4",
+  year: 2008
+}];
+  const getDatos = () => {
+    return datos;
+  }
+    const getDatos = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(datos);
+            }, 1500);
+        });
+    }
+
+    getDatos().then((datos)=> console.log(datos))
+    console.log(getDatos());
+
+</script>
+<body>
+    
+</body>
+</html>
